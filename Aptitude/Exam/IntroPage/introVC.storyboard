@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IntroVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="IntroVC" id="Y6W-OH-hqX" customClass="IntroVC" customModule="Aptitude" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbU-hK-wBS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header img 1" translatesAutoresizingMaskIntoConstraints="NO" id="YlR-Hm-y5b">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="246"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer pattern" translatesAutoresizingMaskIntoConstraints="NO" id="69n-QC-0cI">
+                                <rect key="frame" x="0.0" y="638" width="393" height="214"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umk-ea-wpo">
+                                <rect key="frame" x="30" y="172.33333333333334" width="348" height="27.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-6F-Y2V">
+                                <rect key="frame" x="15" y="95" width="71" height="56"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" image="back button "/>
+                                <connections>
+                                    <action selector="BackBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OCz-Wf-ELa"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="Image 6" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-xD-das">
+                                <rect key="frame" x="0.0" y="246" width="393" height="392"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsk-KG-TwK">
+                                <rect key="frame" x="30.000000000000007" y="148" width="80.666666666666686" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myb-mN-cka">
+                                <rect key="frame" x="95" y="731" width="203" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="DnH-iY-zlv"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Take test Button"/>
+                                <connections>
+                                    <action selector="StartTestBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jk9-Dd-R3i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ0-aa-Ymo">
+                                <rect key="frame" x="158" y="750.33333333333337" width="77.333333333333314" height="24.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hca-BU-fP0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hca-BU-fP0" firstAttribute="trailing" secondItem="Myb-mN-cka" secondAttribute="trailing" constant="95" id="0dt-VT-v3T"/>
+                            <constraint firstItem="hca-BU-fP0" firstAttribute="bottom" secondItem="BQ0-aa-Ymo" secondAttribute="bottom" constant="43" id="1L4-vc-ihn"/>
+                            <constraint firstItem="69n-QC-0cI" firstAttribute="trailing" secondItem="hca-BU-fP0" secondAttribute="trailing" id="1QT-Ri-eqx"/>
+                            <constraint firstItem="YlR-Hm-y5b" firstAttribute="trailing" secondItem="hca-BU-fP0" secondAttribute="trailing" id="1Vv-pZ-1tY"/>
+                            <constraint firstItem="YlR-Hm-y5b" firstAttribute="leading" secondItem="aX4-6F-Y2V" secondAttribute="trailing" constant="-86" id="4ug-zd-m24"/>
+                            <constraint firstItem="aX4-6F-Y2V" firstAttribute="top" secondItem="hca-BU-fP0" secondAttribute="top" constant="36" id="5Rv-DC-0F9"/>
+                            <constraint firstItem="hca-BU-fP0" firstAttribute="trailing" secondItem="umk-ea-wpo" secondAttribute="trailing" constant="15" id="8UK-Ge-uIP"/>
+                            <constraint firstItem="Myb-mN-cka" firstAttribute="leading" secondItem="hca-BU-fP0" secondAttribute="leading" constant="95" id="Aiq-kZ-dOr"/>
+                            <constraint firstItem="Qsk-KG-TwK" firstAttribute="leading" secondItem="hca-BU-fP0" secondAttribute="leading" constant="30" id="Bb6-T9-ZYp"/>
+                            <constraint firstItem="aX4-6F-Y2V" firstAttribute="leading" secondItem="hca-BU-fP0" secondAttribute="leading" constant="15" id="Bxf-0F-bgK"/>
+                            <constraint firstItem="umk-ea-wpo" firstAttribute="leading" secondItem="hca-BU-fP0" secondAttribute="leading" constant="30" id="GeR-Yl-ySb"/>
+                            <constraint firstItem="69n-QC-0cI" firstAttribute="leading" secondItem="hca-BU-fP0" secondAttribute="leading" id="I1M-63-0PJ"/>
+                            <constraint firstItem="YlR-Hm-y5b" firstAttribute="top" secondItem="kbU-hK-wBS" secondAttribute="top" id="OZ2-rA-ilb"/>
+                            <constraint firstItem="Ei6-xD-das" firstAttribute="leading" secondItem="hca-BU-fP0" secondAttribute="leading" id="PXt-PW-Lti"/>
+                            <constraint firstItem="hca-BU-fP0" firstAttribute="bottom" secondItem="Myb-mN-cka" secondAttribute="bottom" constant="27" id="U4e-RA-TNl"/>
+                            <constraint firstItem="umk-ea-wpo" firstAttribute="top" secondItem="Qsk-KG-TwK" secondAttribute="bottom" constant="5" id="YZj-4N-IwT"/>
+                            <constraint firstItem="Myb-mN-cka" firstAttribute="centerX" secondItem="kbU-hK-wBS" secondAttribute="centerX" id="ZPn-tN-BVE"/>
+                            <constraint firstItem="Ei6-xD-das" firstAttribute="top" secondItem="YlR-Hm-y5b" secondAttribute="bottom" id="aZE-Up-8du"/>
+                            <constraint firstItem="Qsk-KG-TwK" firstAttribute="top" secondItem="hca-BU-fP0" secondAttribute="top" constant="89" id="fb3-Sc-9u1"/>
+                            <constraint firstItem="69n-QC-0cI" firstAttribute="top" secondItem="Ei6-xD-das" secondAttribute="bottom" id="hnE-E0-jDQ"/>
+                            <constraint firstItem="BQ0-aa-Ymo" firstAttribute="centerX" secondItem="kbU-hK-wBS" secondAttribute="centerX" id="nBF-wn-jHU"/>
+                            <constraint firstItem="hca-BU-fP0" firstAttribute="trailing" secondItem="Ei6-xD-das" secondAttribute="trailing" id="pa5-80-OGI"/>
+                            <constraint firstAttribute="bottom" secondItem="69n-QC-0cI" secondAttribute="bottom" id="sVA-Bk-VOZ"/>
+                            <constraint firstItem="YlR-Hm-y5b" firstAttribute="leading" secondItem="hca-BU-fP0" secondAttribute="leading" id="xZe-up-1Kh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TopicLabel" destination="umk-ea-wpo" id="xiw-2k-OsG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image 6" width="202" height="202.66667175292969"/>
+        <image name="Take test Button" width="203" height="65"/>
+        <image name="back button " width="47" height="42"/>
+        <image name="footer pattern" width="375" height="214"/>
+        <image name="header img 1" width="375" height="246"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

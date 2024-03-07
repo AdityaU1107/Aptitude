@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExamVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ExamVC" id="Y6W-OH-hqX" customClass="ExamVC" customModule="Aptitude" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2df-yP-UZ8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="KT2-6N-d4T">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="246"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L0w-kl-qtY">
+                                <rect key="frame" x="0.0" y="246" width="393" height="392"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="sfq-Kf-IHT"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="IiQ-vu-P1e"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer pattern 2" translatesAutoresizingMaskIntoConstraints="NO" id="Csr-lN-Xe2">
+                                <rect key="frame" x="0.0" y="638" width="393" height="214"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B78-Na-nTB">
+                                <rect key="frame" x="25" y="176" width="343" height="27.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.99470812080000004" green="0.70947867630000006" blue="0.1296572983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-5f-4bb">
+                                <rect key="frame" x="15" y="95" width="71" height="56"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" image="back button 5"/>
+                                <connections>
+                                    <action selector="BackBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6q2-D7-Qom"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W54-TN-v84"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B78-Na-nTB" firstAttribute="top" secondItem="Yid-5f-4bb" secondAttribute="bottom" constant="25" id="00G-zG-SMx"/>
+                            <constraint firstItem="Csr-lN-Xe2" firstAttribute="top" secondItem="L0w-kl-qtY" secondAttribute="bottom" id="39m-Qb-Ngx"/>
+                            <constraint firstItem="L0w-kl-qtY" firstAttribute="top" secondItem="KT2-6N-d4T" secondAttribute="bottom" id="D2m-MF-aPO"/>
+                            <constraint firstItem="W54-TN-v84" firstAttribute="trailing" secondItem="B78-Na-nTB" secondAttribute="trailing" constant="25" id="Fsd-dy-oIE"/>
+                            <constraint firstItem="KT2-6N-d4T" firstAttribute="leading" secondItem="W54-TN-v84" secondAttribute="leading" id="MJz-Ns-3rz"/>
+                            <constraint firstItem="KT2-6N-d4T" firstAttribute="leading" secondItem="Yid-5f-4bb" secondAttribute="trailing" constant="-86" id="WCT-od-dhu"/>
+                            <constraint firstItem="KT2-6N-d4T" firstAttribute="top" secondItem="2df-yP-UZ8" secondAttribute="top" id="Wtr-dh-YjO"/>
+                            <constraint firstItem="Csr-lN-Xe2" firstAttribute="trailing" secondItem="W54-TN-v84" secondAttribute="trailing" id="Yt2-jS-3s1"/>
+                            <constraint firstItem="Csr-lN-Xe2" firstAttribute="leading" secondItem="W54-TN-v84" secondAttribute="leading" id="a0G-W3-Z6n"/>
+                            <constraint firstItem="Yid-5f-4bb" firstAttribute="top" secondItem="W54-TN-v84" secondAttribute="top" constant="36" id="aUj-Zh-htz"/>
+                            <constraint firstItem="B78-Na-nTB" firstAttribute="leading" secondItem="W54-TN-v84" secondAttribute="leading" constant="25" id="fu4-vP-Pdi"/>
+                            <constraint firstAttribute="bottom" secondItem="Csr-lN-Xe2" secondAttribute="bottom" id="gE1-Dr-sfo"/>
+                            <constraint firstItem="KT2-6N-d4T" firstAttribute="trailing" secondItem="W54-TN-v84" secondAttribute="trailing" id="lyX-kq-0nh"/>
+                            <constraint firstItem="W54-TN-v84" firstAttribute="trailing" secondItem="L0w-kl-qtY" secondAttribute="trailing" id="mj3-sY-CgN"/>
+                            <constraint firstItem="L0w-kl-qtY" firstAttribute="leading" secondItem="W54-TN-v84" secondAttribute="leading" id="suJ-1V-Tbx"/>
+                            <constraint firstItem="Yid-5f-4bb" firstAttribute="leading" secondItem="W54-TN-v84" secondAttribute="leading" constant="15" id="wtV-ru-lTb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TableView" destination="L0w-kl-qtY" id="dv1-5p-gIq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bitmap" width="375" height="246"/>
+        <image name="back button 5" width="47" height="42"/>
+        <image name="footer pattern 2" width="375" height="214"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Solved ProblemVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SolvedProblemVC" id="Y6W-OH-hqX" customClass="SolvedProblemVC" customModule="Aptitude" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header img " translatesAutoresizingMaskIntoConstraints="NO" id="cFz-vm-auW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="246"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vse-c1-Qf7">
+                                <rect key="frame" x="0.0" y="246" width="393" height="460"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 2" translatesAutoresizingMaskIntoConstraints="NO" id="HFx-LX-Ssn">
+                                <rect key="frame" x="0.0" y="706" width="393" height="146"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solved Problems" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jW-5O-UNB">
+                                <rect key="frame" x="25" y="176" width="343" height="27.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.3865418732" green="0.67902785539999999" blue="0.18255272510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXs-d0-88n">
+                                <rect key="frame" x="15" y="95" width="71" height="56"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" image="back button 3"/>
+                                <connections>
+                                    <action selector="BackBTn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hdm-77-Pdy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1jW-5O-UNB" firstAttribute="top" secondItem="HXs-d0-88n" secondAttribute="bottom" constant="25" id="00X-Kp-ANB"/>
+                            <constraint firstItem="cFz-vm-auW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2ZL-nD-xW1"/>
+                            <constraint firstAttribute="bottom" secondItem="HFx-LX-Ssn" secondAttribute="bottom" id="2dc-CF-5SB"/>
+                            <constraint firstItem="HFx-LX-Ssn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DaJ-Sb-wXb"/>
+                            <constraint firstItem="cFz-vm-auW" firstAttribute="leading" secondItem="HXs-d0-88n" secondAttribute="trailing" constant="-86" id="HYf-2F-BUF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1jW-5O-UNB" secondAttribute="trailing" constant="25" id="JCs-OW-JoX"/>
+                            <constraint firstItem="cFz-vm-auW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="MnN-jV-wTR"/>
+                            <constraint firstItem="1jW-5O-UNB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="RCZ-eK-Bsu"/>
+                            <constraint firstItem="cFz-vm-auW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Wkp-Zh-Cur"/>
+                            <constraint firstItem="HFx-LX-Ssn" firstAttribute="top" secondItem="Vse-c1-Qf7" secondAttribute="bottom" id="cJJ-ic-aol"/>
+                            <constraint firstItem="HXs-d0-88n" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="36" id="ePP-iI-V1F"/>
+                            <constraint firstItem="HFx-LX-Ssn" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="gU9-Ml-SkG"/>
+                            <constraint firstItem="Vse-c1-Qf7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hgK-i9-lDG"/>
+                            <constraint firstItem="HXs-d0-88n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="hhu-U9-PZU"/>
+                            <constraint firstItem="Vse-c1-Qf7" firstAttribute="top" secondItem="cFz-vm-auW" secondAttribute="bottom" id="mXE-gF-Pl2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Vse-c1-Qf7" secondAttribute="trailing" id="pgb-bn-ef8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3nq-hl-R0M"/>
+                    <connections>
+                        <outlet property="TableView" destination="Vse-c1-Qf7" id="pwC-0I-VXO"/>
+                        <segue destination="Ze2-14-kK9" kind="show" id="XcF-lP-jz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="85"/>
+        </scene>
+        <!--SolutionDataVC-->
+        <scene sceneID="gGV-kO-TPs">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SolutionDataVC" storyboardName="SolutionDataVC" id="Ze2-14-kK9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="q1f-EB-9PC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eZ-5F-LzL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="505"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Path 2" width="375" height="146"/>
+        <image name="back button 3" width="47" height="42"/>
+        <image name="header img " width="373" height="246"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

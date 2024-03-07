@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PracticeVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PracticeVC" id="Y6W-OH-hqX" customClass="PracticeVC" customModule="Aptitude" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G1C-6U-Kuf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header img 1" translatesAutoresizingMaskIntoConstraints="NO" id="vvR-Mh-rMN">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="246"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IqD-c0-CnS">
+                                <rect key="frame" x="0.0" y="246" width="393" height="392"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="Am6-U9-5XW"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="AJg-Vc-sNb"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer pattern" translatesAutoresizingMaskIntoConstraints="NO" id="tFI-lb-wGp">
+                                <rect key="frame" x="0.0" y="638" width="393" height="214"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-xY-1Bm">
+                                <rect key="frame" x="25" y="176" width="343" height="27.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep7-Ht-SvV">
+                                <rect key="frame" x="15" y="95" width="71" height="56"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" image="back button "/>
+                                <connections>
+                                    <action selector="BackBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="i66-ia-AgT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YkK-3L-xzn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IqD-c0-CnS" firstAttribute="top" secondItem="vvR-Mh-rMN" secondAttribute="bottom" id="6Ey-Ng-Bc4"/>
+                            <constraint firstItem="tFI-lb-wGp" firstAttribute="top" secondItem="IqD-c0-CnS" secondAttribute="bottom" id="742-jU-fJx"/>
+                            <constraint firstAttribute="bottom" secondItem="tFI-lb-wGp" secondAttribute="bottom" id="LiI-jo-k9Q"/>
+                            <constraint firstItem="uB4-xY-1Bm" firstAttribute="leading" secondItem="YkK-3L-xzn" secondAttribute="leading" constant="25" id="Ts0-5G-5Nc"/>
+                            <constraint firstItem="Ep7-Ht-SvV" firstAttribute="top" secondItem="YkK-3L-xzn" secondAttribute="top" constant="36" id="UIS-yA-YFJ"/>
+                            <constraint firstItem="Ep7-Ht-SvV" firstAttribute="leading" secondItem="YkK-3L-xzn" secondAttribute="leading" constant="15" id="UOg-8Y-gJD"/>
+                            <constraint firstItem="uB4-xY-1Bm" firstAttribute="top" secondItem="Ep7-Ht-SvV" secondAttribute="bottom" constant="25" id="VJ8-9Y-Xyf"/>
+                            <constraint firstItem="vvR-Mh-rMN" firstAttribute="leading" secondItem="YkK-3L-xzn" secondAttribute="leading" id="WXs-dh-R5i"/>
+                            <constraint firstItem="vvR-Mh-rMN" firstAttribute="trailing" secondItem="YkK-3L-xzn" secondAttribute="trailing" id="X7e-8q-XKM"/>
+                            <constraint firstItem="IqD-c0-CnS" firstAttribute="leading" secondItem="YkK-3L-xzn" secondAttribute="leading" id="Xqj-Cq-dYn"/>
+                            <constraint firstItem="YkK-3L-xzn" firstAttribute="trailing" secondItem="uB4-xY-1Bm" secondAttribute="trailing" constant="25" id="aV2-k5-KmU"/>
+                            <constraint firstItem="tFI-lb-wGp" firstAttribute="trailing" secondItem="YkK-3L-xzn" secondAttribute="trailing" id="fNK-8F-xNI"/>
+                            <constraint firstItem="vvR-Mh-rMN" firstAttribute="leading" secondItem="Ep7-Ht-SvV" secondAttribute="trailing" constant="-86" id="fuj-0u-szR"/>
+                            <constraint firstItem="vvR-Mh-rMN" firstAttribute="top" secondItem="G1C-6U-Kuf" secondAttribute="top" id="hjN-qE-ePy"/>
+                            <constraint firstItem="YkK-3L-xzn" firstAttribute="trailing" secondItem="IqD-c0-CnS" secondAttribute="trailing" id="rNI-TF-CbE"/>
+                            <constraint firstItem="tFI-lb-wGp" firstAttribute="leading" secondItem="YkK-3L-xzn" secondAttribute="leading" id="xik-wn-Xf1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Tableview" destination="IqD-c0-CnS" id="MVm-vm-ZAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back button " width="47" height="42"/>
+        <image name="footer pattern" width="375" height="214"/>
+        <image name="header img 1" width="375" height="246"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
